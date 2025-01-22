@@ -38,19 +38,19 @@ const Hero = () => {
               </p>
             </div>
             <div className="flex items-center space-x-4 pt-4">
-                <Link aria-label="Github" href="https://github.com/theactualdev">
+                <Link target="_blank" referrerPolicy="origin" aria-label="Github" href="https://github.com/theactualdev">
                     <FaGithub size={20} />
                 </Link>
-                <Link aria-label="Linkedin" href="https://www.linkedin.com/in/theactualdev">
+                <Link target="_blank" referrerPolicy="origin" aria-label="Linkedin" href="https://www.linkedin.com/in/theactualdev">
                     <FaLinkedin size={20} />
                 </Link>
-                <Link aria-label="X (formerly Twitter)" href="https://x.com/theactualdev">
+                <Link target="_blank" referrerPolicy="origin" aria-label="X (formerly Twitter)" href="https://x.com/theactualdev">
                     <FaSquareXTwitter size={20} />
                 </Link>
-                <Link aria-label="E-Mail" href="mailto:olayinkacodes@gmail.com">
+                <Link target="_blank" referrerPolicy="origin" aria-label="E-Mail" href="mailto:olayinkacodes@gmail.com">
                     <IoMdMail size={20} />
                 </Link>
-                <Link aria-label="Resume" href="https://theactualdev.me/resume.pdf" target="_blank" referrerPolicy="origin" download>
+                <Link aria-label="Resume" href="/resume.pdf" target="_blank" referrerPolicy="origin" download>
                     <MdOutlineFileDownload size={20} />
                 </Link>
             </div>
