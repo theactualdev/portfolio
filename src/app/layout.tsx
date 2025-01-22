@@ -15,9 +15,9 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   title: "Olayinka Ayodele | Software Engineer",
   description: "crafted with wit by theactualdev",
-  icons: [{sizes: "64x64 32x", type: "image/x-icon", url: "/favicon.ico", rel:"icon"}, {url: "https://theactualdev.me/image.jpg", type: "image/png", rel: "apple-touch-icon"}],
+  icons: [{sizes: "64x64 32x", type: "image/x-icon", url: "/favicon.ico", rel:"icon"}, {url: "https://olayinka.codes/image.jpg", type: "image/png", rel: "apple-touch-icon"}],
   applicationName: "theactualdev",
-  authors: [{ name: "Olayinka Ayodele", url: "https://theactualdev.me" }],
+  authors: [{ name: "Olayinka Ayodele", url: "https://olayinka.codes" }],
   generator: "Next.js",
   keywords: [
     "Software Engineer",
@@ -78,13 +78,13 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    url: "https://theactualdev.me",
+    url: "https://olayinka.codes",
     title: "Olayinka Ayodele | Software Engineer",
     description: "crafted with wit by theactualdev",
     siteName: "theactualdev",
     images: [
       {
-        url: "https://theactualdev.me/image.jpg",
+        url: "https://olayinka.codes/image.jpg",
         width: 1200,
         height: 630,
         alt: "Olayinka Ayodele | Software Engineer",
@@ -97,7 +97,7 @@ export const metadata: Metadata = {
     creator: "@theactualdev",
     title: "Olayinka Ayodele | Software Engineer",
     description: "crafted with wit by theactualdev",
-    images: "https://theactualdev.me/image.jpg",
+    images: "https://olayinka.codes/image.jpg",
   },
   formatDetection: {
     telephone: true,
