@@ -8,7 +8,7 @@ const Navbar = () => {
   const [activeSection, setActiveSection] = useState("home");
   const [clickedSection, setClickedSection] = useState("");
   const NAV_HEIGHT = 64;
-  activeSection;
+  activeSection === "home" ? "home" : activeSection;
 
   // Determine if a section is substantially visible
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
