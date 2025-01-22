@@ -1,6 +1,7 @@
 import React from "react";
 import { Github, ExternalLink } from "lucide-react";
 import { projects } from "@/data/projects";
+import Image from "next/image";
 
 interface ProjectLinksProps {
 	github?: string;
@@ -58,7 +59,7 @@ const Portfolio = () => {
 							className="group relative bg-white rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden"
 						>
 							<div className="aspect-w-16 aspect-h-9 relative">
-								<img
+								<Image
 									src={project.image}
 									alt={project.title}
 									className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"

@@ -1,9 +1,3 @@
-import {
-	Mail,
-	ExternalLink,
-	ArrowUpRight,
-} from "lucide-react";
-
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { RiTwitterXFill } from "react-icons/ri";
 

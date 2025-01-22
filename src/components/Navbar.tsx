@@ -4,80 +4,88 @@ import { NavItems } from "@/data/Navbar";
 import { useState, useEffect, useCallback } from "react";
 
 const Navbar = () => {
-    const [isOpen, setIsOpen] = useState(false);
-	const [activeSection, setActiveSection] = useState("home");
-  const [clickedSection, setClickedSection] = useState('');
-	const NAV_HEIGHT = 64;
+  const [isOpen, setIsOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState("home");
+  const [clickedSection, setClickedSection] = useState("");
+  const NAV_HEIGHT = 64;
+  activeSection;
 
- // Determine if a section is substantially visible
- // eslint-disable-next-line @typescript-eslint/no-unused-vars
-interface SectionElement {
-  id: string;
-  element: HTMLElement | null;
-}
+  // Determine if a section is substantially visible
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  interface SectionElement {
+    id: string;
+    element: HTMLElement | null;
+  }
 
-const isSubstantiallyVisible = useCallback((element: HTMLElement | null): boolean => {
-  if (!element) return false;
-  const rect = element.getBoundingClientRect();
-  const visibleHeight = Math.min(rect.bottom, window.innerHeight) - Math.max(rect.top, NAV_HEIGHT);
-  const sectionHeight = rect.height;
-  return visibleHeight > sectionHeight * 0.3; // 30% visibility threshold
-}, []);
+  const isSubstantiallyVisible = useCallback(
+    (element: HTMLElement | null): boolean => {
+      if (!element) return false;
+      const rect = element.getBoundingClientRect();
+      const visibleHeight =
+        Math.min(rect.bottom, window.innerHeight) -
+        Math.max(rect.top, NAV_HEIGHT);
+      const sectionHeight = rect.height;
+      return visibleHeight > sectionHeight * 0.3; // 30% visibility threshold
+    },
+    []
+  );
 
-useEffect(() => {
-  const handleScroll = () => {
-    // Only check for new active section if we're not in a click transition
-    // or if the clicked section is substantially visible
-    const clickedElement = clickedSection ? document.getElementById(clickedSection) : null;
-    
-    if (!clickedSection || isSubstantiallyVisible(clickedElement)) {
-      const sectionElements = NavItems.map(section => ({
-        id: section.id,
-        element: document.getElementById(section.id)
-      }));
+  useEffect(() => {
+    const handleScroll = () => {
+      // Only check for new active section if we're not in a click transition
+      // or if the clicked section is substantially visible
+      const clickedElement = clickedSection
+        ? document.getElementById(clickedSection)
+        : null;
 
-      const visibleSection = sectionElements.find(({ element }) => 
-        isSubstantiallyVisible(element)
-      );
+      if (!clickedSection || isSubstantiallyVisible(clickedElement)) {
+        const sectionElements = NavItems.map((section) => ({
+          id: section.id,
+          element: document.getElementById(section.id),
+        }));
 
-      if (visibleSection) {
-        setActiveSection(visibleSection.id);
-        setClickedSection(''); // Clear clicked section when naturally scrolling
+        const visibleSection = sectionElements.find(({ element }) =>
+          isSubstantiallyVisible(element)
+        );
+
+        if (visibleSection) {
+          setActiveSection(visibleSection.id);
+          setClickedSection(""); // Clear clicked section when naturally scrolling
+        }
       }
+    };
+
+    const debouncedHandleScroll = () => {
+      window.requestAnimationFrame(handleScroll);
+    };
+
+    window.addEventListener("scroll", debouncedHandleScroll);
+    handleScroll(); // Initial check
+
+    return () => window.removeEventListener("scroll", debouncedHandleScroll);
+  }, [clickedSection, isSubstantiallyVisible]);
+
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      // Immediately set active and clicked section
+      setActiveSection(id);
+      setClickedSection(id);
+
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - NAV_HEIGHT;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
+
+      // Clear clicked section after scroll animation (roughly 1 second)
+      setTimeout(() => {
+        setClickedSection("");
+      }, 1000);
     }
   };
-
-  const debouncedHandleScroll = () => {
-    window.requestAnimationFrame(handleScroll);
-  };
-
-  window.addEventListener('scroll', debouncedHandleScroll);
-  handleScroll(); // Initial check
-  
-  return () => window.removeEventListener('scroll', debouncedHandleScroll);
-}, [clickedSection, isSubstantiallyVisible]);
-
-const scrollToSection = (id: string) => {
-  const element = document.getElementById(id);
-  if (element) {
-    // Immediately set active and clicked section
-    setActiveSection(id);
-    setClickedSection(id);
-
-    const elementPosition = element.getBoundingClientRect().top;
-    const offsetPosition = elementPosition + window.pageYOffset - NAV_HEIGHT;
-
-    window.scrollTo({
-      top: offsetPosition,
-      behavior: 'smooth'
-    });
-
-    // Clear clicked section after scroll animation (roughly 1 second)
-    setTimeout(() => {
-      setClickedSection('');
-    }, 1000);
-  }
-};
 
   const nickname = "< />";
   return (
@@ -94,11 +102,11 @@ const scrollToSection = (id: string) => {
         </div>
 
         <ul className="hidden md:flex gap-20">
-          {NavItems.map((item, index) => {
+          {NavItems.map((item) => {
             return (
               <li key={item.id}>
                 <button
-                onClick={() => scrollToSection(item.id)}
+                  onClick={() => scrollToSection(item.id)}
                   aria-label={item.id}
                   className="uppercase text-xl font-light hover:text-blue-500 transition-colors"
                 >
@@ -147,8 +155,8 @@ const scrollToSection = (id: string) => {
         } md:hidden bg-white shadow-lg w-screen`}
       >
         <ul className="px-2 pt-2 pb-3 space-y-1">
-          {NavItems.map((item, index) => (
-            <li key={index}>
+          {NavItems.map((item) => (
+            <li key={item.id}>
               <button
                 aria-label={item.id}
                 className="block px-3 py-2 text-sm hover:text-blue-500 transition-colors"
