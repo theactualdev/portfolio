@@ -1,7 +1,7 @@
 "use client";
 
 import { Links, links, socials } from "@/data/footer";
-import { ArrowUpRight, ExternalLink, Mail } from "lucide-react";
+import { ArrowUpRight, ExternalLink, Link, Mail } from "lucide-react";
 import React, { useState } from "react";
 
 const Footer = () => {
@@ -38,16 +38,15 @@ const Footer = () => {
 	const renderLink = (link: Links) => {
 		if (link.isExternal) {
 			return (
-				<a
+				<Link
 					key={link.id}
 					href={link.id}
 					target="_blank"
-					rel="noopener noreferrer"
 					className="group flex items-center text-gray-600 hover:text-blue-600 transition-colors duration-300"
 				>
 					<span className="mr-2">{link.name}</span>
 					<ExternalLink className="w-4 h-4 opacity-0 group-hover:opacity-100 transform -translate-x-2 group-hover:translate-x-0 transition-all duration-300" />
-				</a>
+				</Link>
 			);
 		}
 
@@ -86,16 +85,15 @@ const Footer = () => {
 							</p>
 							<div className="flex flex-wrap gap-3">
 								{socials.map((social) => (
-									<a
+									<Link
 										key={social.label}
 										href={social.href}
 										target="_blank"
-										rel="noopener noreferrer"
 										className="p-2 rounded-lg hover:bg-gray-100 transition-colors duration-300 group"
 										aria-label={social.label}
 									>
 										<social.icon className="w-5 h-5 text-gray-600 group-hover:text-blue-600 transition-colors duration-300" />
-									</a>
+									</Link>
 								))}
 							</div>
 						</div>
