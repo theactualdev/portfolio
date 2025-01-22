@@ -28,7 +28,7 @@ const Experience = () => {
 							<Image alt="React Icon" width={20} height={20} src="/react.svg" />
 							<Image alt="Next Icon" width={20} height={20} src="/next.ico" />
 							<Image alt="Tailwind Icon" width={20} height={20} src="/tailwind-css.svg" />
-							<Image alt="Shadcn Icon" width={32} height={28} src="/shadcn.png" />
+							<Image alt="Shadcn Icon" width={20} height={20} src="/shadcn.png" />
 							<Image alt="Git Icon" width={20} height={20} src="/git.svg" />
 							<Image alt="Figma Icon" width={20} height={20} src="/figma.svg" />
 							<Image alt="Vite Icon" width={20} height={20} src="/vite.png" />
@@ -40,7 +40,7 @@ const Experience = () => {
 							<Image alt="React Icon" width={20} height={20} src="/react.svg" />
 							<Image alt="Next Icon" width={20} height={20} src="/next.ico" />
 							<Image alt="Tailwind Icon" width={20} height={20} src="/tailwind-css.svg" />
-							<Image alt="Shadcn Icon" width={32} height={28} src="/shadcn.png" />
+							<Image alt="Shadcn Icon" width={20} height={20} src="/shadcn.png" />
 							<Image alt="Git Icon" width={20} height={20} src="/git.svg" />
 							<Image alt="Figma Icon" width={20} height={20} src="/figma.svg" />
 							<Image alt="Vite Icon" width={20} height={20} src="/vite.png" />
