@@ -1,8 +1,10 @@
 "use client";
 
 import { Links, links, socials } from "@/data/footer";
-import { ArrowUpRight, ExternalLink, Link, Mail } from "lucide-react";
+import { ArrowUpRight, ExternalLink, Mail } from "lucide-react";
+import Link from "next/link";
 import React, { useState } from "react";
+import { FaGithub } from "react-icons/fa";
 
 const Footer = () => {
 	const currentYear = new Date().getFullYear();
