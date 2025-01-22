@@ -15,7 +15,7 @@ const Hero = () => {
         <div className="ml:0 sm:ml-16 space-y-6">
           <div className="mb-5">
             <h2 className="text-xl uppercase tracking-wider text-gray-600">
-              Hi, I'm
+              Hi, I&apos;m
             </h2>
             <div className="w-14 bg-gray-500 mt-2 h-[2px]" />
           </div>
