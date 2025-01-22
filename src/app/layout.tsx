@@ -15,7 +15,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   title: "Olayinka Ayodele | Software Engineer",
   description: "crafted with wit by theactualdev",
-  icons: [{sizes: "64x64 32x", type: "image/x-icon", url: "https://theactualdev.me/favicon.ico"}],
+  icons: [{sizes: "64x64 32x", type: "image/x-icon", url: "https://theactualdev.me/favicon.ico", rel:"icon"}, {url: "https://theactualdev.me/image.jpg", type: "image/png", rel: "apple-touch-icon"}],
   applicationName: "theactualdev",
   authors: [{ name: "Olayinka Ayodele", url: "https://theactualdev.me" }],
   generator: "Next.js",
