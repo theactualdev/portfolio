@@ -1,4 +1,4 @@
-import { FaLinkedin, FaGithub, FaGit, FaReact, FaCss3, FaPython } from "react-icons/fa";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 import Link from "next/link";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { IoMdMail } from "react-icons/io";
