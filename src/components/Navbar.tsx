@@ -8,7 +8,6 @@ const Navbar = () => {
   const [activeSection, setActiveSection] = useState("home");
   const [clickedSection, setClickedSection] = useState("");
   const NAV_HEIGHT = 64;
-  activeSection === "home" ? "home" : activeSection;
 
   // Determine if a section is substantially visible
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -128,6 +127,7 @@ const Navbar = () => {
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
+              aria-label={activeSection}
             >
               {isOpen ? (
                 <path
