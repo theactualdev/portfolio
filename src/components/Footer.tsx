@@ -52,8 +52,8 @@ const Footer = () => {
 		}
 
 		return (
-			<ul>
-				<li key={link.id}>
+			<ul key={link.id}>
+				<li>
 					<button
 						onClick={() => scrollToSection(link.id)}
 						className="group flex items-center text-gray-600 hover:text-blue-600 transition-colors duration-300"
