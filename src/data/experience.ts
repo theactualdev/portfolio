@@ -34,7 +34,7 @@ export const experience: Experience[] = [
     location: "Lagos, Nigeria",
   },
   {
-    period: "October 2023 - Present",
+    period: "October 2023 - August 2024",
     role: "Lead Frontend Developer",
     company: "Schoolar.IO",
     description:

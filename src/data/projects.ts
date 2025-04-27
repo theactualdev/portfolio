@@ -35,4 +35,13 @@ export const projects: Project[] = [
 		demo: "https://github.com/theactualdev/dutiful",
 		tags: ["Vite", "ReactJS", "TailwindCSS", "Typescript"],
 	},
+	{
+		title: "FaceBlur - AI face blurring for privacy protection.",
+		image: "/faceblur.png",
+		description:
+		"FaceBlur — Privacy Made Simple is an AI-powered face blurring tool developed by theactualdev. Designed for effortless privacy protection, FaceBlur intelligently detects and blurs faces in images with precision and speed. Whether you're safeguarding identities in photos, creating content for social media, or anonymizing personal data, FaceBlur offers a simple, intuitive way to maintain privacy without compromising image quality. With modern AI models and a focus on user-friendly experience, FaceBlur ensures that your privacy is protected — instantly and reliably.",
+		github: "https://github.com/theactualdev/faceblur",
+		demo: "https://faceblur-theactualdev.vercel.app/",
+		tags: ["ReactJS", "Tailwind CSS", "TypeScript", "Vite"],
+	}
 ];
