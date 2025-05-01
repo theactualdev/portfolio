@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Barlow_Semi_Condensed } from "next/font/google";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/react"
 
 const barlowSemiCondensed = Barlow_Semi_Condensed({
   subsets: ["latin"],
@@ -115,6 +116,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${barlowSemiCondensed.className} antialiased`}>
         {children}
+        <Analytics />
       </body>
     </html>
   );
