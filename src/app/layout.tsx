@@ -14,6 +14,7 @@ export const viewport: Viewport = {
 }
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://olayinka.codes"),
   title: "Olayinka Ayodele | Software Engineer",
   description: "crafted with wit by theactualdev",
   icons: [{sizes: "64x64 32x", type: "image/x-icon", url: "/favicon.ico", rel:"icon"}, {url: "https://olayinka.codes/image.jpg", type: "image/png", rel: "apple-touch-icon"}],
@@ -21,6 +22,10 @@ export const metadata: Metadata = {
   authors: [{ name: "Olayinka Ayodele", url: "https://olayinka.codes" }],
   generator: "Next.js",
   keywords: [
+    "Olayinka Ayodele",
+    "theactualdev",
+    "Olayinka",
+    "Ayodele",
     "Software Engineer",
     "Frontend Engineer",
     "React",
@@ -30,10 +35,6 @@ export const metadata: Metadata = {
     "Frontend Developer",
     "Developer",
     "Web Developer",
-    "theactualdev",
-    "Olayinka Ayodele",
-    "Olayinka",
-    "Ayodele",
     "Software Engineer in Nigeria",
     "Software Engineer in Lagos",
     "Software Engineer in Africa",
@@ -113,7 +114,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className={`${barlowSemiCondensed.className} antialiased`}>
         {children}
         <Analytics />
