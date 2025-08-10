@@ -32,7 +32,7 @@ const Hero = () => {
           <div className="pt-1 space-y-2">
             <div className="flex items-center space-x-2">
               <p className="text-lg text-gray-600 max-w-[500px]">
-                I&apos;m a Frontend Software Engineer with 2+ years of experience
+                I&apos;m a Frontend Software Engineer with experience
                 specializing in React.js, TypeScript, and Next.js. Experienced
                 in integrating RESTful APIs and component-based architecture.
               </p>
