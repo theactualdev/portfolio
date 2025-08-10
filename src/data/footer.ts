@@ -1,4 +1,5 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { BiCalendar } from "react-icons/bi";
 import { RiTwitterXFill } from "react-icons/ri";
 
 export interface Links{
@@ -17,6 +18,7 @@ export const links: Links[] = [
 		isExternal: true,
 	},
 	{ name: "Skills", id: "services", isExternal: false },
+	{ name: "Book A Meeting!", id: "https://calendly.com/olayinkacodes", isExternal: true },
 ];
 
 interface Socials {
@@ -41,4 +43,9 @@ export const socials: Socials[] = [
 		href: "https://www.linkedin.com/in/theactualdev/",
 		label: "LinkedIn",
 	},
+	{
+		icon: BiCalendar,
+		href: "https://calendly.com/olayinkacodes",
+		label: "Book a Meeting",
+	}
 ];

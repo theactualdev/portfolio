@@ -54,6 +54,9 @@ const Hero = () => {
                     <MdOutlineFileDownload size={20} />
                 </Link>
             </div>
+            <div className="button pt-4">
+              <Link aria-label="Meeting" className="flex items-center justify-center w-full px-6 py-3 text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition-colors duration-300 group" target="_blank" referrerPolicy="origin" href="https://calendly.com/olayinkacodes">Book A Meeting!</Link>
+            </div>
           </div>
         </div>
 
