@@ -6,6 +6,10 @@ const nextConfig: NextConfig = {
       {
         source: "/resume.pdf",
         destination: "/resume.pdf"
+      },
+      {
+        source: "/resume.pdf/:path*",
+        destination: "/resume.pdf"
       }
     ]
   },
