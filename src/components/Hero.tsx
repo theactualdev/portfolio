@@ -62,7 +62,7 @@ const Hero = () => {
 
         <div className="relative flex justify-center items-center">
             <div className="aspect-square rounded-full overflow-hidden bg-gray-900 mt-0 w-[280px] sm:w-[300px] md:mt-10 lg:mt-0 md:w-[350px] lg:w-[450px]">
-                <Image src="/image.jpg" alt="Profile" width={1920} height={1920} priority className="w-full h-full object-cover" />
+                <Image src="/image.jpg" alt="Profile" width={1920} height={1920} priority className="w-full h-full object-cover" fetchPriority="high" />
             </div>
         </div>
       </div>
