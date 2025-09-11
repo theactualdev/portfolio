@@ -50,7 +50,7 @@ const Hero = () => {
                 <Link target="_blank" referrerPolicy="origin" aria-label="E-Mail" href="mailto:olayinkacodes@gmail.com">
                     <IoMdMail size={20} />
                 </Link>
-                <Link aria-label="Resume" href="/resume.pdf" target="_blank" referrerPolicy="origin" download>
+                <Link aria-label="Resume" prefetch={false} href="/resume.pdf" target="_blank" referrerPolicy="origin" download>
                     <MdOutlineFileDownload size={20} />
                 </Link>
             </div>
