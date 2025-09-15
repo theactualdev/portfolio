@@ -16,7 +16,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL("https://olayinka.codes"),
   title: "Olayinka Ayodele | Software Engineer",
-  description: "crafted with wit by theactualdev",
+  description: "Crafted with wit by theactualdev — I’m Ayodele Olayinka, a frontend engineer building fast, elegant apps with React, Next.js & TypeScript. Featured projects include a CRM Dashboard, FaceBlur AI, and a GPA tool, so far.",
   icons: [{sizes: "64x64 32x", type: "image/x-icon", url: "/favicon.ico", rel:"icon"}, {url: "https://olayinka.codes/image.jpg", type: "image/png", rel: "apple-touch-icon"}],
   applicationName: "theactualdev",
   authors: [{ name: "Olayinka Ayodele", url: "https://olayinka.codes" }],

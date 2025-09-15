@@ -11,16 +11,16 @@ const About = () => {
     return(
         <div id="about" className="px-4 sm:px-20 md:px-24 lg:px-32 mt-10 md:mt-4 mb-10">
             <div>
-                <h2 className="text-lg uppercase tracking-wider text-gray-600">
+                <h1 className="text-lg uppercase tracking-wider text-gray-600">
                     about me
-                </h2>
+                </h1>
                 <div className="w-20 h-[2px] bg-gray-500"></div>
             </div>
 
-            <h1 className={`${cardo.className} text-xl sm:text-2xl md:text-3xl font-bold pt-5 leading-10`}>
+            <h2 className={`${cardo.className} text-xl sm:text-2xl md:text-3xl font-bold pt-5 leading-10`}>
                 I&apos;m a Software Engineer ( Frontend Intensive ) with experience specializing in React.js, TypeScript, and Next.js. Focused on UI/UX optimization, boosting user satisfaction scores, and
                 committed to delivering clean, maintainable code.
-            </h1>
+            </h2>
         </div>
     )
 }

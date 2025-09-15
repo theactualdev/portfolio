@@ -25,7 +25,7 @@ const Hero = () => {
             </h2>
             <h3 className="text-2xl md:text-3xl text-gray-600 mt-2">
               Frontend Developer{" "}
-              <span className="text-sm md:text-base">Afficionado</span>
+              <span className="text-sm md:text-base">Aficionado</span>
             </h3>
           </div>
 
