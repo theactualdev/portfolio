@@ -33,14 +33,14 @@ export const experience: Experience[] = [
       "Enhanced analytical and communication skills by collaborating with cross-functional teams of 5+ members to gather and clarify project requirements, leading to a 20% reduction in project delays and a 15% improvement in stakeholder satisfaction",
     location: "Lagos, Nigeria",
   },
-  {
-    period: "October 2023 - August 2024",
-    role: "Lead Frontend Developer",
-    company: "Schoolar.IO",
-    description:
-      "Engineered robust, component-based designs for web applications using React and TypeScript; findings helped resolve the three biggest causes affecting application crashes during testing phases",
-    location: "Lagos, Nigeria ( REMOTE )",
-  },
+  // {
+  //   period: "October 2023 - August 2024",
+  //   role: "Lead Frontend Developer",
+  //   company: "Schoolar.IO",
+  //   description:
+  //     "Engineered robust, component-based designs for web applications using React and TypeScript; findings helped resolve the three biggest causes affecting application crashes during testing phases",
+  //   location: "Lagos, Nigeria ( REMOTE )",
+  // },
   {
     period: "November 2024 - January 2025",
     role: "Frontend Developer",

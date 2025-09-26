@@ -8,15 +8,15 @@ interface Project {
 }
 
 export const projects: Project[] = [
-	{
-		title: "CRM Dashboard: School Management System",
-		image: "/dashboard.png",
-		description:
-			"The CRM Dashboard for School Management System is a modern web application tailored to simplify administrative tasks for schools. It provides intuitive modules for managing students, teachers, classes, schedules, and more. With a focus on scalability and user experience, the dashboard is ideal for administrators seeking a centralized solution for seamless school operations.",
-        github: "https://github.com/theactualdev/crm-dashboard",
-		demo: "https://schoolcrm-dashboard.vercel.app/admin",
-		tags: ["Next.js", "TypeScript", "Tailwind CSS"],
-	},
+	// {
+	// 	title: "CRM Dashboard: School Management System",
+	// 	image: "/dashboard.png",
+	// 	description:
+	// 		"The CRM Dashboard for School Management System is a modern web application tailored to simplify administrative tasks for schools. It provides intuitive modules for managing students, teachers, classes, schedules, and more. With a focus on scalability and user experience, the dashboard is ideal for administrators seeking a centralized solution for seamless school operations.",
+    //     github: "https://github.com/theactualdev/crm-dashboard",
+	// 	demo: "https://schoolcrm-dashboard.vercel.app/admin",
+	// 	tags: ["Next.js", "TypeScript", "Tailwind CSS"],
+	// },
     {
 		title: "GPA Calculator",
 		image: "/gpa.png",
@@ -26,15 +26,15 @@ export const projects: Project[] = [
         demo: "https://theactual-gpa.vercel.app/",
         github: "https://github.com/theactualdev/theactualGPA",
 	},
-	{
-		title: "Dutiful: Landing Page",
-		image: "/dutiful.png",
-		description:
-			"The Dutiful Landing Page is a professional, lightweight, and highly optimized web page that serves as the face of the Dutiful platform. Built to attract and inform users, the page is designed with a focus on clarity, responsiveness, and a seamless user experience across all devices.",
-		github: "https://github.com/theactualdev/dutiful",
-		demo: "https://github.com/theactualdev/dutiful",
-		tags: ["Vite", "ReactJS", "TailwindCSS", "Typescript"],
-	},
+	// {
+	// 	title: "Dutiful: Landing Page",
+	// 	image: "/dutiful.png",
+	// 	description:
+	// 		"The Dutiful Landing Page is a professional, lightweight, and highly optimized web page that serves as the face of the Dutiful platform. Built to attract and inform users, the page is designed with a focus on clarity, responsiveness, and a seamless user experience across all devices.",
+	// 	github: "https://github.com/theactualdev/dutiful",
+	// 	demo: "https://github.com/theactualdev/dutiful",
+	// 	tags: ["Vite", "ReactJS", "TailwindCSS", "Typescript"],
+	// },
 	{
 		title: "FaceBlur - AI face blurring for privacy protection.",
 		image: "/faceblur.png",
@@ -43,5 +43,15 @@ export const projects: Project[] = [
 		github: "https://github.com/theactualdev/faceblur",
 		demo: "https://faceblur-theactualdev.vercel.app/",
 		tags: ["ReactJS", "Tailwind CSS", "TypeScript", "Vite"],
-	}
+	},
+	{
+  title: "Tociano Boutique",
+  image: "/tociano.png",
+  description:
+    "An fully functioning e-commerce platform showcasing African fashion, built with Next.js and TypeScript. Features product listings, categories, and a responsive shopping cart for a seamless retail experience.",
+  github: "https://github.com/theactualdev/tociano",
+  demo: "https://tociano.vercel.app/",
+  tags: ["Next.js", "TypeScript", "TailwindCSS", "React"],
+}
+
 ];
