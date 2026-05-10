@@ -48,5 +48,13 @@ export const experience: Experience[] = [
     description:
       "Developed and maintained 3+ web applications for clients, ensuring 100% compliance with project requirements and deadlines; received 95% positive feedback from clients on project delivery",
     location: "Lagos, Nigeria ( REMOTE )",
-  }
+  },
+  {
+    period: "March 2026 - Present",
+    role: "Founding Frontend Engineer",
+    company: "Nevo",
+    description:
+      "Led the development of scalable, responsive frontend systems for an AI-powered adaptive learning platform focused on personalized education. \n Focused on creating scalable, responsive, and high-performance user experiences that support adaptive education at scale, from classroom environments to personalized learning pathways.",
+    location: "Lagos, Nigeria",
+  },
 ];
